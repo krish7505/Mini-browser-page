@@ -23,15 +23,16 @@ body{
 }
 /* headersection */
 header{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     /* border-bottom-width: 1px;
     border-bottom-color: black; */
+    position: fixed;
     border-color: black;
     border-bottom: #2e2e2e33 solid 1px;
 }
 .header-overLay{
     padding: 30px 40px;
-    width: 90%;
+    width: 100%;
     /* background-color: aqua; */
 
 
@@ -82,7 +83,7 @@ nav>ul{
     flex-direction: column;
     padding: 0px 50px;
     justify-content: center;
-    width: 90;
+    width: 100%;
     height: 100%;
     gap: 20px;
 
@@ -102,10 +103,42 @@ nav>ul{
     }
     p{
         font-size: 20px;
-        color: lightcoral;
+        color: rgb(248, 243, 223);
     }
 
 }
+/* card section */
+
+.card-1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(239, 226, 225);
+}
+.card-1-overlay{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    grid-template-rows: repeat(2,250px);
+    gap: 20px;
+    align-items: center;
+    padding-top: 50px;
+    justify-content: center;
+}
+.cd-1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    
+}
+.cd{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
 
 @media(max-width:1100px){
     .nav-links{

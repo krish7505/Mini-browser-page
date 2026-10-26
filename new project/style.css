@@ -1,0 +1,64 @@
+html,body{
+    height:100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(117, 70, 9);
+    transition: all 1s ease;
+    transform-origin: top left;
+    
+  
+   
+} */
+/* .box:hover{
+    transform: rotate(90deg);
+    background-color: blue;
+
+} */
+.box1{
+    width:400px ;
+    height: 400px;
+    background-image: url("https://media.istockphoto.com/id/1200666442/photo/couple-hiking-in-the-dolomites.jpg?s=612x612&w=is&k=20&c=apSAJXb2fYOIJLl1xYFBWl4wVXLpVVosy3Lxi6EigG4=");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.eg1{ 
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 80, 130);
+    transition: all 1s ease;
+}
+.b1{
+    transform-origin: top left;
+}
+.b2{
+    transform-origin: top right;
+}
+.b3{
+    transform-origin: bottom left;
+}
+.b4{
+    transform-origin: bottom right;
+}
+.box1:hover{
+    .b1{
+        transform: rotate(90deg);
+    }
+    .b2{
+        transform: rotate(-90deg);
+    }
+    .b3{
+        transform: rotate(-90deg);
+    }
+    .b4{
+        transform: rotate(90deg);
+    }
+}
